@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDistance.API", "GeoDistance\GeoDistance.API.csproj", "{2DDE1AC0-F69D-4E2A-BF4F-A1D928D7F871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDistance.Application", "Application\GeoDistance.Application.csproj", "{96B87CD6-FF35-43BD-ADAF-6C06EFC4983C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDistance.Infrastructure", "Infrastructure\GeoDistance.Infrastructure.csproj", "{BACF711B-B8E9-4B13-81F2-6F2161E73A29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoDistance.Domain", "Domain\GeoDistance.Domain.csproj", "{64415169-BE1A-409D-843B-4A6BB7AD932B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DDE1AC0-F69D-4E2A-BF4F-A1D928D7F871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DDE1AC0-F69D-4E2A-BF4F-A1D928D7F871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DDE1AC0-F69D-4E2A-BF4F-A1D928D7F871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DDE1AC0-F69D-4E2A-BF4F-A1D928D7F871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96B87CD6-FF35-43BD-ADAF-6C06EFC4983C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96B87CD6-FF35-43BD-ADAF-6C06EFC4983C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96B87CD6-FF35-43BD-ADAF-6C06EFC4983C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96B87CD6-FF35-43BD-ADAF-6C06EFC4983C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BACF711B-B8E9-4B13-81F2-6F2161E73A29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACF711B-B8E9-4B13-81F2-6F2161E73A29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACF711B-B8E9-4B13-81F2-6F2161E73A29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACF711B-B8E9-4B13-81F2-6F2161E73A29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64415169-BE1A-409D-843B-4A6BB7AD932B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64415169-BE1A-409D-843B-4A6BB7AD932B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64415169-BE1A-409D-843B-4A6BB7AD932B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64415169-BE1A-409D-843B-4A6BB7AD932B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8DF1F10-EB98-4FB8-950A-85F1F76A5ED4}
+	EndGlobalSection
+EndGlobal
