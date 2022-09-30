@@ -8,6 +8,9 @@ using Microsoft.Extensions.Logging;
 
 namespace Application.Distance.Queries.GetDistance
 {
+    /// <summary>
+    /// Query class for sending geo coordinates
+    /// </summary>
     public record GetDistanceQuery : IRequest<double>
     {
         public GeoPoint PointA { get; set; } = new GeoPoint();
@@ -16,6 +19,9 @@ namespace Application.Distance.Queries.GetDistance
         public MeasuringUnit MeasuringUnit { get; set; } = MeasuringUnit.Kilometre;
     }
 
+    /// <summary>
+    /// Mediator handler for GetDistanceQuery
+    /// </summary>
     public class GetDistanceQueryHandler : IRequestHandler<GetDistanceQuery, double>
     {
         private ICalculateDistance? _distanceCalculation;

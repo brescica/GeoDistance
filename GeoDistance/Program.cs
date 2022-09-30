@@ -61,3 +61,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+/// Program - reference this in webAppFactory
+public partial class Program { }

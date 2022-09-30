@@ -4,6 +4,9 @@ namespace GeoDistance.Domain.Common
 {
     public static class DistanceConverter
     {
+        /// <summary>
+        /// Converts kilometres to kilometre, meter or Mile
+        /// </summary>
         public static double ConvertUnit(MeasuringUnit measuringUnit, double distanceInKm)
         {
             return measuringUnit switch

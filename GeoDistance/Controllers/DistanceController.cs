@@ -4,12 +4,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GeoDistance.Controllers
 {
+    /// <summary>
+    /// Controller for calculating geo distance
+    /// </summary>
     [ApiController]
     [Route("api/[controller]")]
     public class DistanceController : ControllerBase
     {
         private readonly IMediator _mediator;
 
+        /// inject mediator
         public DistanceController(IMediator mediator)
         {
             _mediator = mediator;

@@ -5,13 +5,16 @@ namespace GeoDistance.Tests.Domain.UnitTests
 {
     public class DistanceConverterTests
     {
-        [Fact]
-        public void StaticMethodConvertUnitToMetersTest()
+        [Theory]
+        [InlineData(2.345, 2.345, MeasuringUnit.Kilometre)]
+        [InlineData(2345, 2.345, MeasuringUnit.Meter)]
+        [InlineData(1.4571149950000002, 2.345, MeasuringUnit.Mile)]
+        public void ConvertUnitTest(double expected, double value, MeasuringUnit measuringUnit)
         {
             // Arrange            
-            var expected = 2345d;
+
             // Act
-            var result = DistanceConverter.ConvertUnit(MeasuringUnit.Meter, 2.345);
+            var result = DistanceConverter.ConvertUnit(measuringUnit, value);
             //Assert
             Assert.Equal(expected, result);
         }
