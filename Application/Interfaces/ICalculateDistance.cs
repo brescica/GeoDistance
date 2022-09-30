@@ -1,6 +1,6 @@
 ﻿using Domain.Entities;
 
-namespace Application
+namespace GeoDistance.Application.Interfaces
 {
     public interface ICalculateDistance
     {

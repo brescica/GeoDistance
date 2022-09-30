@@ -1,8 +1,8 @@
-﻿using Application;
-using Domain.Constants;
+﻿using Domain.Constants;
 using Domain.Entities;
+using GeoDistance.Application.Interfaces;
 
-namespace Infrastructure
+namespace GeoDistance.Infrastructure.CalculateDistance
 {
     public class PythagorasDistance : ICalculateDistance
     {

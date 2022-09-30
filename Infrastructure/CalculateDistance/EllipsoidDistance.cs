@@ -1,8 +1,8 @@
-﻿using Application;
-using Domain.Entities;
+﻿using Domain.Entities;
+using GeoDistance.Application.Interfaces;
 using GeoDistance.Domain.Common;
 
-namespace Infrastructure
+namespace GeoDistance.Infrastructure.CalculateDistance
 {
     public class EllipsoidDistance : ICalculateDistance
     {

@@ -1,7 +1,8 @@
-﻿using Application;
-using Domain.Enums;
+﻿using Domain.Enums;
+using GeoDistance.Application.Interfaces;
+using GeoDistance.Infrastructure.CalculateDistance;
 
-namespace Infrastructure
+namespace GeoDistance.Infrastructure.Factories
 {
     public class DistanceFactory : IDistanceFactory
     {

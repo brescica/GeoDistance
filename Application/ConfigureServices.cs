@@ -11,7 +11,6 @@ namespace Application
         {
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddScoped<IRequestHandler<GetDistanceQuery, double>, GetDistanceQueryHandler>();
-            services.AddScoped<IRequestHandler<GetDistanceQueryTwo, double>, GetDistanceQueryTwoHandler>();
 
             return services;
         }

@@ -1,6 +1,6 @@
 ﻿using Domain.Enums;
 
-namespace Application
+namespace GeoDistance.Application.Interfaces
 {
     public interface IDistanceFactory
     {

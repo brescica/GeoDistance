@@ -1,5 +1,5 @@
-﻿using Application;
-using Infrastructure;
+﻿using GeoDistance.Application.Interfaces;
+using GeoDistance.Infrastructure.Factories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace GeoDistance.Infrastructure

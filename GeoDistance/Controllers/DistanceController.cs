@@ -22,21 +22,9 @@ namespace GeoDistance.Controllers
         /// <response code="200">Returns the calculated distance</response>
         [HttpGet(Name = "CalculateDistance")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<double>> CalculateDistance([FromQuery] GetDistanceQuery query)
+        public async Task<IActionResult> CalculateDistance([FromQuery] GetDistanceQuery query)
         {
-            return await _mediator.Send(query);
-        }
-
-        /// <summary>
-        /// Calculate distance between two coordinates in km, m or M
-        /// </summary>
-        /// <returns>Distance between two coordinates in km, m or M</returns>
-        /// <response code="200">Returns the calculated distance</response>
-        [HttpGet("factory", Name = "CalculateDistanceFactory")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        public async Task<ActionResult<double>> CalculateDistanceFactory([FromQuery] GetDistanceQueryTwo query)
-        {
-            return await _mediator.Send(query);
+            return Ok(await _mediator.Send(query));
         }
     }
 }
